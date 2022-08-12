@@ -1,3 +1,7 @@
-.button {
+#button1 {
     width: 100px;
+}
+
+.pushed {
+    transform: scale(.75,.75);
 }

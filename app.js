@@ -14,6 +14,9 @@ myButton.addEventListener("click", () => {
 
 
 
+// write 1-100 to console log; if divisible by 3 print fizz
+// if divisible by 5 print buzz, if divisible by both print
+// fizzbuzz, if neither print the number
 
 // let line = 1;
 // function doThis() {

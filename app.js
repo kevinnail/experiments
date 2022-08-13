@@ -56,7 +56,18 @@ myButton.addEventListener("click", () => {
 // };
 
 
+const a = 2
+const b = 5
 
+function myMathMin (a,b){
+	let c=a+b;
+	console.log (c);
+};
+
+function doThis() {
+  myMathMin(a,b);
+  console.log("hi");
+}; 
 
 
 

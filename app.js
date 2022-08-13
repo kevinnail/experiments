@@ -98,13 +98,15 @@ let timer = setInterval(function () {
   }
   // draw the animation at the moment timePassed
   draw(timePassed);
+  
 }, 1);
 
 // as timePassed goes from 0 to 2000
 // left gets values from 0px to 400px
 function draw(timePassed) {
-  // myImage.style.left = timePassed / 1 + "px";
-  myImage.style.rotate = timePassed / 2 + "deg";
+  myImage.style.left = timePassed / 2 + "px";
+  myImage.style.rotate = timePassed / 3 + "deg";
+  myImage.style.top= timePassed / 2 + "px";
 }
 
 

@@ -92,7 +92,7 @@ let timer = setInterval(function () {
   // how much time passed from the start?
   let timePassed = Date.now() - start;
 
-  if (timePassed >= 3000) {
+  if (timePassed >= 2500) {
     clearInterval(timer); // finish the animation after 2 seconds
     return;
   }
@@ -104,9 +104,18 @@ let timer = setInterval(function () {
 // as timePassed goes from 0 to 2000
 // left gets values from 0px to 400px
 function draw(timePassed) {
+  // while (timePassed <= 300){
   myImage.style.left = timePassed / 2 + "px";
   myImage.style.rotate = timePassed / 3 + "deg";
   myImage.style.top= timePassed / 2 + "px";
+  myImage.style.width =timePassed / 2 + "px";
+
+  // break}
+
+//  }
+
+
+
 }
 
 

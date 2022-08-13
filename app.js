@@ -61,12 +61,13 @@ const b = 5
 
 function myMathMin (a,b){
 	let c=a+b;
-	console.log (c);
+	//console.log (c);
+  return c;
 };
 
 function doThis() {
-  myMathMin(a,b);
-  console.log("hi");
+  // myMathMin(a,b);
+  console.log(myMathMin(a,b));
 }; 
 
 

@@ -6,9 +6,7 @@ const unPush = myButton.classList.toggle("pushed");
 //   console.log(line))};
 
 myButton.addEventListener("click", () => {
-  // console.log(showText);
   myButton.classList.toggle("pushed");
-  // myButton.setTimeout(unPush, 1000);
   setTimeout(doThis,150);
   // myButton.classList.toggle("pushed");
   // doThis();
@@ -61,21 +59,39 @@ myButton.addEventListener("click", () => {
 // };
 
 
+// function calling another function with a function- note passing 
+// arguments 
 const a = 2
 const b = 5
 
-function myMathMin (a,b){
-	let c=a+b;
+function myMathMin (y,z){
+	let c=y+z;
 	//console.log (c);
   return c;
 };
 
 function doThis() {
-  
- myButton.classList.toggle("pushed");
+   myButton.classList.toggle("pushed");
  
   console.log(myMathMin(a,b));
 }; 
 
+const myImage = document.getElementById('myImage');
+let start = Date.now(); // remember start time
+let timer = setInterval(function () {
+  // how much time passed from the start?
+  let timePassed = Date.now() - start;
 
+  if (timePassed >= 2000) {
+    clearInterval(timer); // finish the animation after 2 seconds
+    return;
+  }
+  // draw the animation at the moment timePassed
+  draw(timePassed);
+}, 20);
 
+// as timePassed goes from 0 to 2000
+// left gets values from 0px to 400px
+function draw(timePassed) {
+  train.style.left = timePassed / 5 + "px";
+}

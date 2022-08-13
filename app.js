@@ -9,8 +9,13 @@ myButton.addEventListener("click", () => {
   // console.log(showText);
   myButton.classList.toggle("pushed");
   // myButton.setTimeout(unPush, 1000);
-  doThis();
+  setTimeout(doThis,150);
+  // myButton.classList.toggle("pushed");
+  // doThis();
+  
 });
+
+
 
 // IMPORTANT since I have a button to push to engage code, all 
 // experiments must have code inside the doThis function!!!
@@ -66,7 +71,9 @@ function myMathMin (a,b){
 };
 
 function doThis() {
-  // myMathMin(a,b);
+  
+ myButton.classList.toggle("pushed");
+ 
   console.log(myMathMin(a,b));
 }; 
 

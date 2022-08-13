@@ -30,7 +30,7 @@ myButton.addEventListener("click", () => {
 // fizzbuzz, if neither print the number
 
 // let line = 1;
-// function doThis() {
+// function` doThis() {
 //   for (line; line <= 100; line++){
 //     let output ="";
 //     if(line % 3 == 0) output += "fizz";
@@ -61,22 +61,32 @@ myButton.addEventListener("click", () => {
 
 // function calling another function with a function- note passing 
 // arguments 
-const a = 2
-const b = 5
+// const a = 2
+// const b = 5
 
-function myMathMin (y,z){
-	let c=y+z;
-	//console.log (c);
-  return c;
-};
+// function myMathMin (y,z){
+// 	let c=y+z;
+// 	//console.log (c);
+//   return c;
+// };
+
+// function doThis() {
+//    myButton.classList.toggle("pushed");
+
+//   console.log(myMathMin(a,b));
+// }; 
+
+
+//------------------------------------------------------------
+
+
+
 
 function doThis() {
    myButton.classList.toggle("pushed");
- 
-  console.log(myMathMin(a,b));
-}; 
 
-const myImage = document.getElementById('myImage');
+   
+const myImage = document.getElementById("myImage");
 let start = Date.now(); // remember start time
 let timer = setInterval(function () {
   // how much time passed from the start?
@@ -93,5 +103,11 @@ let timer = setInterval(function () {
 // as timePassed goes from 0 to 2000
 // left gets values from 0px to 400px
 function draw(timePassed) {
-  train.style.left = timePassed / 5 + "px";
+  myImage.style.left = timePassed / 5 + "px";
 }
+
+
+
+}; 
+
+

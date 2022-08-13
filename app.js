@@ -12,7 +12,15 @@ myButton.addEventListener("click", () => {
   doThis();
 });
 
+// IMPORTANT since I have a button to push to engage code, all 
+// experiments must have code inside the doThis function!!!
 
+// function doThis() {
+//// put function here:
+
+// }
+
+//-------------------------------------------------------------
 
 // write 1-100 to console log; if divisible by 3 print fizz
 // if divisible by 5 print buzz, if divisible by both print
@@ -29,11 +37,23 @@ myButton.addEventListener("click", () => {
   
 // }
 
+//------------------------------------------------------------
 
+// write function = to math.min to find the minimum number between
+// 2 numbers and returns the smaller argument
 
+// const a = -23
+// const b = -9
 
-
-
+// function doThis() {
+//   // function myMathMin (a,b){
+// // put function here:
+// // let c=a+b;
+// let output = 0
+//   if (a<b) output = a;
+//   else output= b;
+//   console.log (output);
+// };
 
 
 

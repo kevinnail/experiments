@@ -2,8 +2,16 @@
 
 }
 
+#button-grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+
 #button1 {
     width: 100px;
+    cursor: pointer;
+    grid-column-start: 3;
 }
 
 .pushed {
@@ -15,6 +23,7 @@
     width: 300px;
     position: relative;
     cursor: pointer;
+    transform: scale(1,1);
     /* display:block;
     grid-column-start: 3; */
     

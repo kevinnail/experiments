@@ -85,25 +85,26 @@ myButton.addEventListener("click", () => {
 function doThis() {
    myButton.classList.toggle("pushed");
 
-   
+
 const myImage = document.getElementById("myImage");
 let start = Date.now(); // remember start time
 let timer = setInterval(function () {
   // how much time passed from the start?
   let timePassed = Date.now() - start;
 
-  if (timePassed >= 2000) {
+  if (timePassed >= 3000) {
     clearInterval(timer); // finish the animation after 2 seconds
     return;
   }
   // draw the animation at the moment timePassed
   draw(timePassed);
-}, 20);
+}, 1);
 
 // as timePassed goes from 0 to 2000
 // left gets values from 0px to 400px
 function draw(timePassed) {
-  myImage.style.left = timePassed / 5 + "px";
+  // myImage.style.left = timePassed / 1 + "px";
+  myImage.style.rotate = timePassed / 2 + "deg";
 }
 
 
